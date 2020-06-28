@@ -18,7 +18,7 @@ SOURCES += main.c \
 HEADERS += text.h \
     _text.h
 
-QMAKE_CFLAGS += -Wall -Wextra -Werror
+QMAKE_CFLAGS += -Wall -Wextra 
 
 # gcov
 QMAKE_CFLAGS += -fprofile-arcs -ftest-coverage
