@@ -47,7 +47,7 @@ int m(text txt, long line, long position)
                 return 2;
 			}
             txt->cursor->position = position + 1;
-            return 0;
+            
 		}	
 		current = current->next;
 		index++; 
