@@ -106,7 +106,7 @@ TEST (r1ne, r1netest7)
     append_line(txt, "qwer1\n");
     append_line(txt, "qwe2\n");
     
-    m(txt, 1, 0);
+    m(txt, 1, 10);
 
     unsigned long long startl = txt->length;
 
