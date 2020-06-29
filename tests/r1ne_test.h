@@ -112,7 +112,7 @@ TEST (r1ne, r1netest7)
 
     int res = r1ne(txt);
 
-    EXPECT_EQ(3, res);
+    EXPECT_EQ(1, res);
 
     EXPECT_EQ(txt->length + 1, startl);
 }
