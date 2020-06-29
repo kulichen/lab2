@@ -14,7 +14,7 @@ TEST (r1ne, r1netest1)
 
     unsigned long long startl = txt->length;
 
-    auto res = r1ne(txt);
+    int res = r1ne(txt);
 
     EXPECT_EQ(2, res);
 
@@ -29,7 +29,7 @@ TEST (r1ne, r1netest2)
 
     unsigned long long startl = txt->length;
 
-    auto res = r1ne(txt);
+    int res = r1ne(txt);
 
     EXPECT_EQ(0, res);
 
@@ -43,7 +43,7 @@ TEST (r1ne, r1netest3)
 
     unsigned long long startl = txt->length;
 
-    auto res = r1ne(txt);
+    int res = r1ne(txt);
 
     EXPECT_EQ(-1, res);
 
@@ -59,7 +59,7 @@ TEST (r1ne, r1netest4)
 
     unsigned long long startl = txt->length;
 
-    auto res = r1ne(txt);
+    int res = r1ne(txt);
 
     EXPECT_EQ(-2, res);
 
@@ -76,7 +76,7 @@ TEST (r1ne, r1netest5)
 
     unsigned long long startl = txt->length;
 
-    auto res = r1ne(txt);
+    int res = r1ne(txt);
 
     EXPECT_EQ(1, res);
 
