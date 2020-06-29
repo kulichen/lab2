@@ -103,7 +103,7 @@ TEST (r1ne, r1netest7)
     /* Создаем структуру описания текста */
     text txt = create_text();
     append_line(txt, "\n");
-    append_line(txt, "qwe1\n");
+    append_line(txt, "qwer1\n");
     append_line(txt, "qwe2\n");
     
     m(txt, 1, 0);
