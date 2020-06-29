@@ -33,8 +33,9 @@ int r1ne(text txt)
 	// Если первая строка не пустая и не единственная
 	if ((strlen(current->contents) > 1) && (txt->length > 1)) {
 		if (txt->cursor->line == txt->begin) txt->cursor->line = current->next;
-		free(current);
+		
 		txt->begin = current->next;
+		free(current);
         txt->length--;
         return 2;
 	} 
