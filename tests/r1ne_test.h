@@ -82,3 +82,19 @@ TEST (r1ne, r1netest5)
 
     EXPECT_EQ(txt->length + 1, startl);
 }
+
+TEST (r1ne, r1netest6)
+{
+    /* Создаем структуру описания текста */
+    text txt = create_text();
+    append_line(txt, "\n");
+    append_line(txt, "qwe2\n");
+
+    unsigned long long startl = txt->length;
+
+    int res = r1ne(txt);
+
+    EXPECT_EQ(3, res);
+
+    EXPECT_EQ(txt->length + 1, startl);
+}
