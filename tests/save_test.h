@@ -12,7 +12,7 @@ TEST (save, savetest1)
         append_line(txt, "qwe1\n");
         append_line(txt, "qwe2");
 
-        auto res = save(txt, (char*)"savetest1.txt");
+        int res = save(txt, (char*)"savetest1.txt");
 
         EXPECT_EQ(1, res);
 
@@ -28,7 +28,7 @@ TEST (save, savetest2)
         /* Создаем структуру описания текста */
         text txt = create_text();
 
-        auto res = save(txt, (char*)"savetest2.txt");
+        int res = save(txt, (char*)"savetest2.txt");
 
         EXPECT_EQ(0, res);
 }
