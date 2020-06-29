@@ -13,7 +13,7 @@ TEST(mle, mletest1)
     append_line(txt, "qwe2");
 
     m(txt, 0, 0);
-    auto res = mle(txt);
+    int res = mle(txt);
 
     EXPECT_EQ(1, res);
 
@@ -28,7 +28,7 @@ TEST(mle, mletest2)
     append_line(txt, "qwe2");
 
     m(txt, 0, 5);
-    auto res = mle(txt);
+    int res = mle(txt);
 
     EXPECT_EQ(1, res);
 
